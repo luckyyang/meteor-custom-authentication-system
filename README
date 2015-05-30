@@ -1,2 +1,0 @@
-Call following in the browser console:
-Meteor.loginAsAdmin('admin-password');
