@@ -2,7 +2,7 @@ Accounts.registerLoginHandler(function(loginRequest) {
   if(!loginRequest.admin) {
     return undefined;
   }
-  console.log('======================')
+
   if(loginRequest.password != 'admin-password') {
     return null;
   }
@@ -23,7 +23,7 @@ Accounts.registerLoginHandler(function(loginRequest) {
 
   //sending token along with the userId
   return {
-    id: userId,
+    userId: userId,
     token: stampedToken.token
   }
 });
